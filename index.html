@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+    <link rel="icon" href="IMAGES/hvhvjc.jpg" type="IMAGES/jpg">
+  </head>
+  <body>
+
+    <!--- header -->
+    <div class="firstly">
+        <h2>ACHEAMFOUR TOP HOTEL</h2>
+    </div>
+    <header class="header" id="header">
+        <div class="head-top">
+             <div class="site-name">
+               <span>ACHEAMFOUR TOP HOTEL</span>
+            </div>
+             <div class="site-nav">
+              <button id= "nav-btn" class="nav-btn" onclick="toggle()">MENU</button>
+
+            </div>
+        </div>
+
+        
+        <div class="head-bottom flex">
+            <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+            <hr>
+            <P>
+                <b>Hi</b> dear, you are warmly welcome to Acheamfour Top Hotel,
+                Enjoy your stay. Thank you!!
+            </P>
+            <button type="button" class="head-btn"><a href="#services">GET STARTED</a></button>
+        </div>
+    
+        
+
+        <div class="video-container">
+                <img src="IMAGES/e.jpg" id="e" alt="ROOM-INSIDE">
+                <img src="IMAGES/444.jpg" id="444" alt="ROOM-INSIDE">
+                <img src="IMAGES/17.jpg" id="17" alt="ROOM-INSIDE">
+                <img src="IMAGES/14.jpg" id="14" alt="ROOM-INSIDE">
+                <img src="IMAGES/9.jpg" id="9" alt="ROOM-INSIDE">
+                <img src="IMAGES/n.jpg" id="n" alt="ROOM-INSIDE">
+                
+        </div>
+
+
+
+    </header>
+    <!--- end of header-->
+
+    <!--side navbar-->
+       
+    <div class="sidenav" id="sidenav">
+            <button class="cancel-btn" id="cancel-btn" onclick=toggle()>CLOSE</button>
+
+        <ul class="navbar">
+            <li><a href="#header">home</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#rooms">rooms</a></li>
+            <li><a href="#customers">customers</a></li>
+        </ul>
+       
+    </div>
+
+    <!---end of site navbar-->
+   
+
+    <!---body content-->
+
+    
+    <section class="services sec-width" id="services">
+        <div class="title">
+            <h2>services</h2>
+        </div>
+        <div class="services-container">
+            <!--single service-->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <!--<i class="fas fa-utensils"></i>-->
+                        <img src="IMAGES/UTENSILS.jpeg" alt="UTENSILS">
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Food service/Food runner</h2>
+                    <p>We run a restaurant services that works in all the 24 hours. All kinds of meal is available in there.
+                        You can visit the restaurant and purchase your meal by yourself or you can order your meal from 
+                        appropriate personels. Enjoy your stay, thank you.
+                    </p>
+                    <button type="button" class="btn"><a href="#rooms">Know more</a></button>
+                </div>
+            </article>
+
+            <!--end of single service-->
+            <!--single service-->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <!--<i class="fas fa-swimming-pool"></i>-->
+                        <img src="IMAGES/REFRESHMENT.jpeg" alt="REFRESHMENT">
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Refreshment</h2>
+                    <p>Acheamfour Top Hotel offers a very warm refreshment by providing a swimming pool in the hotel premises.
+                        Refeshment is free of charge for our customers who has booked reservations here. The pool opens at 8:00am in 
+                        the morning and closes at 10:00pm in the evening. Enjoy your stay, thank you. 
+                    </p>
+                    <button type="button" class="btn"><a href="#rooms">Know more</a></button>
+                </div>
+            </article>
+
+            <!--end of single service-->
+            <!--singel service-->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <!--<i class="fas fa-broom"></i>-->
+                        <img src="IMAGES/HOUSEKEEPING.jpeg" alt="HOUSEKEEPING">
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Housekeeping</h2>
+                    <p> We offer a very good housekeeping services every morning. Housekeeping workers will be available on
+                        your door-step every morning to keep your place clean and you can also seek for it
+                        anytime anyday. Enjoy your stay, thank you.
+                    </p>
+                    <button type="button" class="btn"><a href="#rooms">Know more</a></button>
+                </div>
+            </article>
+
+            <!--end of single service-->
+            <!--singel service-->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <!--<i class="fas fa-door-closed"></i>-->
+                        <img src="IMAGES/SECURITY.jpeg" alt="SECURITY">
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Security</h2>
+                    <p>We provide you very tight security services. Your security is our priority.
+                        We assure you that, your life is safe when you are in here. Enjoy your stay, thank you.
+                    </p>
+                    <button type="button" class="btn"><a href="#rooms">Know more</a></button>
+                </div>
+            </article>
+
+            <!--end of single service-->
+        </div>
+    </section>
+    <div class="book" id="book">
+        <form action="book-form.php" method="post" class="book-form" target="_blank">
+            <div class="form-item">
+                <label for="checkin-date"> Check In Date:</label>
+                <input type="date" id="checkin-date" name="check_in_date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date"> Check Out Date:</label>
+                <input type="date" id="checkout-date" name="check_out_date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults:</label>
+                <input type="number" min="1" value="1" id="adult" name="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children:</label>
+                <input type="number" min="1" value="1" id="adult" name="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms:</label>
+                <input type="number" min="1" value="1" id="adult" name="rooms">
+            </div>
+            <div class="form-item">
+                <input type="submit"  class="btn" value="Book Now">
+            </div>
+        </form>
+    </div>
+
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>rooms</h2>
+        </div>
+        <div class="rooms-container">
+            <!--single room-->
+            <article class="room">
+            <div class="room-image">
+                <img src="IMAGES/38.jpg" alt="room-image">
+                
+            </div>
+            <div class="room-text">
+                <h3>Luxury Rooms</h3>
+                <ul>
+                    <li>
+                        <i class="fas fa-arrow-alt-circle-right"></i>
+                        Double bed with couch infront
+                    </li>
+                    <li>
+                        <i class="fas fa-arrow-alt-circle-right"></i>
+                        Living room
+                    </li>
+                    <li>
+                        <i class="fas fa-arrow-alt-circle-right"></i>
+                        Washroom and bacony
+                    </li>
+                </ul>   
+                <p>This room contains double bed and a couch infront of the bed. It has a 
+                    livng room. It also has a washroom and a bacony at the back of the it.
+                </p>
+                <p>This room cost 300 Ghana cedis per night. So the number of the days you 
+                    will spend here will determine the price that you will pay.
+                </p>
+                <p class="rate">
+                    <span>&cent;300.00/</span> per night
+                </p> 
+                <button type="button" class="btn"><a href="#book">book now</a></button>
+            </div>
+            </article>
+            <!--end of single room-->
+            <!--single room-->
+            <article class="room">
+                <div class="room-image">
+                    <img src="IMAGES/34.jpg" alt="room-image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Single bed with no couch infront
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            No Living room
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            washroom
+                        </li>
+                    </ul>   
+                    <p>This room contains single bed but no couch infront of the bed. It has no 
+                        livng room. It also has a washroom.
+                    </p>
+                    <p>This room cost 200 Ghana cedis per night. So the number of the days you 
+                        will spend here will determine the price that you will pay.
+                    </p>
+                    <p class="rate">
+                        <span>&cent;200.00/</span> per night
+                    </p> 
+                    <button type="button" class="btn"><a href="#book">book now</a></button>
+                </div>
+                </article>
+                <!--end of single room-->
+                <!--single room-->
+            <article class="room">
+                <div class="room-image">
+                    <img src="IMAGES/2.jpg" alt="room-image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Double bed with couch infront
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Washroom
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                           Living room
+                        </li>
+                    </ul>   
+                    <p>This room contains double bed and a couch infront of the bed. It has a 
+                        livng room. It also has a washroom.
+                    </p>
+                    <p>This room cost 300 Ghana cedis per night. So the number of the days you 
+                        will spend here will determine the price that you will pay.
+                    </p>
+                    <p class="rate">
+                        <span>&cent;300.00/</span> per night
+                    </p> 
+                    <button type="button" class="btn"><a href="#book">book now</a></button>
+                </div>
+                </article>
+                <!--end of single room-->
+                 <!--single room-->
+            <article class="room">
+                <div class="room-image">
+                    <img src="IMAGES/23.jpg" alt="room-image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Double bed with no couch infront
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Living room and a porch
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Washroom
+                        </li>
+                    </ul>   
+                    <p>This room contains double bed and no couch infront of the bed. It has a 
+                        livng room and a small porch. It also has a washroom.
+                    </p>
+                    <p>This room cost 300 Ghana cedis per night. So the number of the days you 
+                        will spend here will determine the price that you will pay.
+                    </p>
+                    <p class="rate">
+                        <span>&cent;300.00/</span> per night
+                    </p> 
+                    <button type="button" class="btn"><a href="#book">book now</a></button>
+                </div>
+                </article>
+                <!--end of single room-->
+        </div>
+    </section>
+
+    <section class="customers" id="customers">
+        <div class="sec-width">
+            <div class="title">
+                <h2>customers</h2>
+            </div>
+            <div class="customers-container">
+                <!--single customer-->
+                <div class="customer">
+                    <div class="rating">
+                       <span><img src="IMAGES/FIVE-RATE.jpeg"></span>
+                       <!-- <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>-->
+                    </div>
+                    <h3>We Loved it</h3>
+                    <p>We had a very great time in Acheamfour Top Hotel. Infact we loved it, 
+                        we made a wonderful memories. We recommend Acheamfour Top 
+                        Hotel for everyone who wants to get a comfortable live 
+                        in Kumasi. Thank you Acheamfoour!! 
+                    </p> 
+                    <hr>
+                    <img src="IMAGES/IMG-20230223-WA0027.jpg" alt="customer image">
+                    <span>ROBERT ROZAY, ACCRA</span>
+                    <hr>
+                </div>
+                <!--end of single customer-->
+                <!--single customer-->
+                <div class="customer">
+                    <div class="rating">
+                        <span><img src="IMAGES/FIVE-RATE.jpeg"></span>
+                        <!--<span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>-->
+                    </div>
+                    <h3>Nice Place</h3>
+                    <p>Acheamfour actually has a very nice compound and very condusive 
+                        environment as well. I have been to so many hotels in kumasi here, but
+                        I can boldy say that, Acheamfour Top Hotel has very nice place in own 
+                        persoective. Thank you.
+                    </p>
+                    <hr>
+                    <img src="IMAGES/IPHR4549.JPG" alt="customer image">
+                    <span>MR. FRANK, KUMASI</span>
+                    <hr>
+                </div>
+                <!--end of single customer-->
+                <!--single customer-->
+                <div class="customer">
+                    <div class="rating">
+                        <span><img src="IMAGES/FIVE-RATE.jpeg"></span>
+                        <!--<span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>-->
+                    </div>
+                    <h3>Comfortable Living</h3>
+                    <p>Hello everyone, my name is Kuame Adviser and I am an actor, social media inflencer
+                        and a tiktoker as well. I am from Takoradi, Ghana and I will like to
+                        recommend Acheamfour Top Hotel for you. I really had a comfortable stay at 
+                        their premises. Thank you.
+                    </p>
+                    <hr>
+                    <img src="IMAGES/fdeedaaa612a4493b6c4d7591fa21900.jpg" alt="customer image">
+                    <span>KUAME ADVISER, TAKORADI</span>
+                    <hr>
+                </div>
+                <!--end of single customer-->
+            </div>
+        </div>
+    </section>
+
+
+
+ <!--end of body content-->
+
+ <!--footer-->
+ <footer class="footer">
+    <div class="footer-container">
+        <div>
+            <h2>About Us</h2>
+            <p>You can locate Acheamfour Top Hotel at Apatrapa Junction off Tanoso-Apatrapa
+                road, Kumasi.
+            </p>
+            <ul class="social-icons">
+                <li class="flex">
+                    <!--<i class="fa fa-twitter fa-2x"></i>-->
+                    <img src="IMAGES/TWITER.jpeg"></a>
+                </li>
+                <li class="flex">
+                   <!--<i class="fa fa-facebook fa-2x"></i>-->
+                   <img src="IMAGES/FACEBOOK.jpeg">
+                </li>
+                <li class="flex">
+                    <!--<i class="fa fa-instagram fa-2x"></i>-->
+                    <img src="IMAGES/INSTAGRAM.jpeg">
+                </li>
+            </ul>
+        </div>
+
+        <div class="useful">
+            <h2>Useful Links</h2>
+            <a href="#rooms">Rooms</a>
+            <a href="#header">Home</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#services">Services</a>     
+        </div>
+
+        <div>
+            <h2>Have A Question?</h2>
+            <div class="contact-item" id="contact">
+                <span>
+                    <!-- <i class="fas fa-map-marker-alt"></i>-->
+                   <img src="IMAGES/MAP.jpeg">
+                </span>
+                <span>
+                     Apatrapa Junction kumasi, Ghana
+                </span>
+            </div>
+            <div class="contact-item">
+                <span>
+                    <!--<i class="fas fa-phone-alt"></i>-->
+                    <img src="IMAGES/PHONE.jpeg">
+                </span>
+                <span>
+                    233548062567 / 233599172449
+                </span>
+            </div>
+            <div class="contact-item">
+                <span>
+                   <!--<i class="fas fa-envelope"></i>-->
+                     <img src="IMAGES/EMAIL.jpeg">
+                </span>
+                <span>
+                   <a href="mailto:acheamfourtophotel@gmail.com">acheamfourtophotel@gmail.com</a> 
+                </span>
+            </div>
+        </div>
+    </div>
+             <div class="owners">
+                <p><b> <p>AAMUSTED ITE GENIUS GROUP, Copyright &copy; 2024 || All Right Reserved</p></b></p>
+             </div>
+ </footer>
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js">
+
+
+  </script>    
+    
+  </body>
+</html>
